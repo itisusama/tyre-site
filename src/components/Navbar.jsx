@@ -3,6 +3,7 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 import '../assets/bootstrap/css/bootstrap-icon.css';
 import '../assets/css/style.css';
 import { Helmet } from 'react-helmet';
+import Topheader from './Topheader';
 
 const Navbar = () => {
   return (
@@ -12,6 +13,8 @@ const Navbar = () => {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     </Helmet>
     
+    <Topheader/>
+
        <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-dark px-4 px-lg-5 py-2 py-lg-0">
           <a href="" className="navbar-brand p-0">

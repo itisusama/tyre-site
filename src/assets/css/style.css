@@ -1228,3 +1228,7 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+.ts-heading{
+    margin-top: 100px;
+}
