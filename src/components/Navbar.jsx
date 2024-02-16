@@ -8,13 +8,14 @@ const Navbar = () => {
   return (
     <>
     <Helmet>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     </Helmet>
     
        <div className="container-fluid position-relative p-0">
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark px-4 px-lg-5 py-2 py-lg-0">
           <a href="" className="navbar-brand p-0">
-            <h1 className="m-0"><i className="fa fa-map-marker-alt me-3"></i>Travela</h1>
+            <h1 className="m-0">Tyre Site</h1>
             {/* <img src="img/logo.png" alt="Logo" /> */}
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -41,7 +42,7 @@ const Navbar = () => {
               </div>
               <a href="contact.html" className="nav-item nav-link">Contact</a>
             </div>
-            <a href="" className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+            <a href="" className="btn btn-success rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
           </div>
         </nav>
     </div>
