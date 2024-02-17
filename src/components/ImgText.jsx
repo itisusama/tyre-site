@@ -10,10 +10,10 @@ const ImgText = ({ imgSrc, heading5, heading2, paragraph1, paragraph2, btnText }
           </div>
           <div className="col-lg-6">
             <h5>{heading5}</h5>
-            <h2>{heading2}</h2>
+            <h2 className='fw-bolder'>{heading2}</h2>
             <p>{paragraph1}</p>
             <p>{paragraph2}</p>
-            <button className='btn btn-success rounded'>{btnText}</button>
+            <button className='btn btn-success rounded-pill py-2 px-4'>{btnText}</button>
           </div>
         </div>
       </section>
