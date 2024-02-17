@@ -30,7 +30,7 @@ const Home = () => {
      <Cards/>
 
     {/* Banner */}
-    <section className="pc-home-banner p-3 mt-3">
+    <section className="pc-home-banner p-3 my-3">
       <div className="container mx-auto py-3">
         <div className="row">
           {/* 1 */}
@@ -100,7 +100,17 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <ImgText
+        imgSrc={dynamicImgSrc}
+        heading5={dynamicHeading5}
+        heading2={dynamicHeading2}
+        paragraph1={dynamicParagraph1}
+        paragraph2={dynamicParagraph2}
+        btnText= {' '}
+     />
+
     </>
+    
   )
 }
 

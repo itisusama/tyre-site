@@ -8,7 +8,7 @@ const Cards = () => {
         
         <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
             <div>
-              <img src={'images/img-new.jpg'} alt="1" className='img-fluid rounded' />
+              <img src={'images/img-10.jpg'} alt="1" className='img-fluid rounded' />
 
               <h2 className='fw-bolder text-center'>Card Heading</h2>
               <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>
@@ -18,7 +18,7 @@ const Cards = () => {
 
         <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
             <div>
-              <img src={'images/img-new.jpg'} alt="1" className='img-fluid rounded' />
+              <img src={'images/img-11.jpg'} alt="1" className='img-fluid rounded' />
 
               <h2 className='fw-bolder text-center'>Card Heading</h2>
               <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>
@@ -28,7 +28,7 @@ const Cards = () => {
 
         <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
             <div>
-              <img src={'images/img-new.jpg'} alt="1" className='img-fluid rounded' />
+              <img src={'images/img-12.jpg'} alt="1" className='img-fluid rounded' />
 
               <h2 className='fw-bolder text-center'>Card Heading</h2>
               <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>

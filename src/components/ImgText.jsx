@@ -13,7 +13,7 @@ const ImgText = ({ imgSrc, heading5, heading2, paragraph1, paragraph2, btnText }
             <h2 className='fw-bolder'>{heading2}</h2>
             <p>{paragraph1}</p>
             <p>{paragraph2}</p>
-            <button className='btn btn-success rounded-pill py-2 px-4'>{btnText}</button>
+            <button className='btn btn-success rounded-pill px-4'>{btnText}</button>
           </div>
         </div>
       </section>
