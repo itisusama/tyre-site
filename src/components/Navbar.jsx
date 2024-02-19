@@ -30,22 +30,20 @@ const Navbar = () => {
             <div className="navbar-nav ms-auto py-0">
               <Link to="/" className="nav-item nav-link active">Home</Link>
               <Link to="/about" className="nav-item nav-link">About</Link>
-              <Link to="services.html" className="nav-item nav-link">Services</Link>
-              <Link to="packages.html" className="nav-item nav-link">Packages</Link>
-              <Link to="blog.html" className="nav-item nav-link">Blog</Link>
+              <Link to="/blog" className="nav-item nav-link">Blog</Link>
               <div className="nav-item dropdown">
-                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                 <div className="dropdown-menu m-0">
-                  <a href="destination.html" className="dropdown-item">Destination</a>
-                  <a href="tour.html" className="dropdown-item">Explore Tour</a>
-                  <a href="booking.html" className="dropdown-item">Travel Booking</a>
-                  <a href="gallery.html" className="dropdown-item">Our Gallery</a>
-                  <a href="guides.html" className="dropdown-item">Travel Guides</a>
-                  <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                  <a href="404.html" className="dropdown-item">404 Page</a>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="#" className="dropdown-item">Service</Link>
                 </div>
               </div>
-              <a href="contact.html" className="nav-item nav-link">Contact</a>
+              <Link to="/contact" className="nav-item nav-link">Contact</Link>
             </div>
             <a href="" className="btn btn-success rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
           </div>
