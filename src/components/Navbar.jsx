@@ -4,6 +4,7 @@ import '../assets/bootstrap/css/bootstrap-icon.css';
 import '../assets/css/style.css';
 import { Helmet } from 'react-helmet';
 import Topheader from './Topheader';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -27,11 +28,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <a href="index.html" className="nav-item nav-link active">Home</a>
-              <a href="about.html" className="nav-item nav-link">About</a>
-              <a href="services.html" className="nav-item nav-link">Services</a>
-              <a href="packages.html" className="nav-item nav-link">Packages</a>
-              <a href="blog.html" className="nav-item nav-link">Blog</a>
+              <Link to="/" className="nav-item nav-link active">Home</Link>
+              <Link to="/about" className="nav-item nav-link">About</Link>
+              <Link to="services.html" className="nav-item nav-link">Services</Link>
+              <Link to="packages.html" className="nav-item nav-link">Packages</Link>
+              <Link to="blog.html" className="nav-item nav-link">Blog</Link>
               <div className="nav-item dropdown">
                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div className="dropdown-menu m-0">
