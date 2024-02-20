@@ -47,10 +47,7 @@ const Home = () => {
       </section>
 
      <Testimonial/>
-
-     <section className='container border'>
-      
-     </section>
+     
     </>
     
   )

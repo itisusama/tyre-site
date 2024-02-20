@@ -344,16 +344,13 @@ html, body{
     justify-content: space-between;
   }
   /* Testimonial */
-  blockquote{
-    padding: 1.24rem;
-  }
 
   blockquote img{
     border-radius: 50%;
   }
 
   #slider-container {
-    margin-top: 2rem;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -374,7 +371,6 @@ html, body{
     animation: 20s slider infinite;
     -webkit-animation: 20s slider infinite;
     border-top: 1px solid #c2c1c2;
-    border-bottom: 1px solid #c2c1c2;
     margin: 0;
   }
   
@@ -413,4 +409,8 @@ html, body{
   
   @media(min-width:750px) {
     #testimonials{ height: 150px;}
+  }
+  
+  .dark-color{
+    background-color: #212529 !important;
   }

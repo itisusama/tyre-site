@@ -1,7 +1,4 @@
 import React from 'react'
-import '../assets/bootstrap/css/bootstrap.min.css';
-import '../assets/bootstrap/css/bootstrap-icon.css';
-import '../assets/css/style.css';
 import { Helmet } from 'react-helmet';
 import Topheader from './Topheader';
 import { Link } from 'react-router-dom';
