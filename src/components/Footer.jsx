@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Footer = () => {
   return (
     <>
-      <footer className='container-fluid py-y dark-color'>
+      <footer className='container-fluid py-y dark-color mt-4'>
         <section className=' container mt-4 bg-dark'>
             {/* columns */}
             <section className='row'>
