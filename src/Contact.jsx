@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 
 const headerStyle = {
+    marginTop: '95px',
     backgroundImage: `url("https://via.placeholder.com/1200x400")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',

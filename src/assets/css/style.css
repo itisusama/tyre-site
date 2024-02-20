@@ -298,7 +298,7 @@ html, body{
 }
 
 .ts-bg-image{
-    background-image: url('https://mdbootstrap.com/img/new/slides/041.webp');
+    background-image: url("https://via.placeholder.com/1200x400");
     background-repeat: no-repeat;
     background-size: cover;
     height: 52vh;

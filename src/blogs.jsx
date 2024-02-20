@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 
 const headerStyle = {
+    marginTop: '95px',
     backgroundImage: `url("https://via.placeholder.com/1200x400")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',

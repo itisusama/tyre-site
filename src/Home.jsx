@@ -1,19 +1,13 @@
 import React from 'react';
 import Carousel from './components/Carousel';
-import ImgText from './components/ImgText';
+import { Container, Row, Col } from 'react-bootstrap';
 import Cards from './components/Cards';
 import Testimonial from './components/Testimonial';
 import Banner from './components/Banner';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
-    const dynamicImgSrc = "images/img-new.jpg";
-    const dynamicHeading5 = "Welcome to!";
-    const dynamicHeading2 = "Dynamic Heading";
-    const dynamicParagraph1 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, soluta, incidunt, laborum repellat excepturi quia eveniet tempora praesentium odit dignissimos recusandae cumque consectetur quaerat earum eaque a delectus. Est, omnis?";
-    const dynamicParagraph2 = dynamicParagraph1;
-    const dynamicBtn = "Contact Us";
-
+    
   return (
     <>
     <Helmet>
@@ -21,14 +15,21 @@ const Home = () => {
     </Helmet>
 
      <Carousel/>
-     <ImgText
-        imgSrc={dynamicImgSrc}
-        heading5={dynamicHeading5}
-        heading2={dynamicHeading2}
-        paragraph1={dynamicParagraph1}
-        paragraph2={dynamicParagraph2}
-        btnText={dynamicBtn}
-     /> 
+
+      <section className='container'>
+        <Row style={{ marginTop: '6rem' }}>
+          <Col md={6}>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
+            Suscipit architecto rem voluptatibus quibusdam provident. sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
+            Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
+          </Col>
+          <Col md={6}>
+            <img src="https://via.placeholder.com/500x350?text=Heading" alt="Mission" className="img-fluid" />
+          </Col>
+        </Row>
+      </section>
+
      <div className='mt-4'>
         <div className="row text-center justify-content-center">
             <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
@@ -45,17 +46,19 @@ const Home = () => {
 
      <Banner/>
 
-     <section className="ts-image-text container">
-        <div className="row">
-          <div className="col-lg-6">
-            <img src={"images/img-10.jpg"} className='img-fluid rounded' alt="Dynamic Image"/>
-          </div>
-          <div className="col-lg-6">
-            <h2 className='fw-bolder'>Heading goes here</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, autem amet quos dignissimos nisi sed eligendi debitis maiores dolorem non quod architecto aut totam eaque quo adipisci cupiditate cum ea!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, autem amet quos dignissimos nisi sed eligendi debitis maiores dolorem non quod architecto aut totam eaque quo adipisci cupiditate cum ea!</p>
-          </div>
-        </div>
+     <section className='container'>
+        <Row style={{ marginTop: '6rem' }}>
+          <Col md={6} data-aos="fade-right" className='order-2'>
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
+            Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
+            Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
+            Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
+          </Col>
+          <Col md={6} className='order-1'>
+            <img src="https://via.placeholder.com/500x350?text=Tire+Service" alt="Mission" className="img-fluid" />
+          </Col>
+        </Row>
       </section>
 
      <Testimonial/>
