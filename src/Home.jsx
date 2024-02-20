@@ -48,7 +48,7 @@ const Home = () => {
 
      <section className='container'>
         <Row style={{ marginTop: '6rem' }}>
-          <Col md={6} data-aos="fade-right" className='order-2'>
+          <Col md={6} className='order-2'>
             <h2>Our Mission</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
             Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
