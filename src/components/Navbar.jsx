@@ -28,9 +28,9 @@ const Navbar = () => {
             <NavLink to="/about" className="nav-item nav-link" activeClassName="active">About</NavLink>
             <NavLink to="/blogs" className="nav-item nav-link" activeClassName="active">Blog</NavLink>
               <div className="nav-item dropdown">
-                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" activeClassName="active">Services</Link>
                 <div className="dropdown-menu m-0">
-                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="/mobile-tyre-fitting" className="dropdown-item">Service</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
