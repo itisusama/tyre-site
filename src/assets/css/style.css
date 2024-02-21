@@ -500,3 +500,7 @@ html, body{
 .process-box:last-child .process-border {
     display: none !important;
 }
+
+.linkStyle{
+    text-decoration: none;
+}

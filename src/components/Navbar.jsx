@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="navbar-nav ms-auto py-0">
               <Link to="/" className="nav-item nav-link active">Home</Link>
               <Link to="/about" className="nav-item nav-link">About</Link>
-              <Link to="/blog" className="nav-item nav-link">Blog</Link>
+              <Link to="/blogs" className="nav-item nav-link">Blog</Link>
               <div className="nav-item dropdown">
                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                 <div className="dropdown-menu m-0">
