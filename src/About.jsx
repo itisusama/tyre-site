@@ -54,16 +54,16 @@ function About() {
           </Col>
         </Row>
 
-        <Row className="mt-5">
-          <Col md={6} data-aos="fade-right">
-            <img src="https://via.placeholder.com/500x350?text=Our+Team" alt="Team" className="img-fluid" />
-          </Col>
-          <Col md={6} className='mt-5' data-aos="fade-left">
+        <Row data-aos="fade-up" style={{ marginTop: '4rem' }}>
+          <Col md={6} data-aos="fade-left" className='order-2'>
             <h2>Our Team</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti deserunt optio itaque, mollitia a dolor magni fugit minus totam! Ipsum debitis commodi sed atque id dolorem molestiae neque vero.
-            Excepturi, voluptatum facere, et doloribus inventore ea commodi beatae, impedit eveniet dignissimos rerum dicta odit sequi quia obcaecati earum? Fugit dignissimos voluptatum quaerat. Soluta sint accusamus deleniti mollitia rem facilis.
-            Ex, numquam ab beatae possimus sunt eius, quam fugit sequi modi odio nostrum officiis est labore. Eum, iure? Totam nihil vero vitae dignissimos similique voluptatibus.
-            Molestias quo esse dicta quod vitae corrupti sequi aspernatur minima vel, ducimus tempore exercitationem autem odit veniam, similique aliquam? Illum, animi. Consectetur natus ipsa vero fugiat cupiditate reiciendis nesciunt iste.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
+            Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
+            Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
+            Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
+          </Col>
+          <Col md={6} data-aos="fade-right" className='order-1'>
+            <img src="https://via.placeholder.com/500x350?text=Our+Team" alt="Mission" className="img-fluid" />
           </Col>
         </Row>
 

@@ -59,7 +59,8 @@ function BlogPage() {
     <div>
       {/* Banner Section */}
       <header style={headerStyle}>
-        <h1>Blog</h1>
+        <h1>Blogs</h1>
+        <h5><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Blogs</h5>
       </header>
 
       {/* Main Content */}
