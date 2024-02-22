@@ -18,8 +18,13 @@ import PartWornTyre from './PartWornTyre';
 import JumpStart from './JumpStart';
 import LocknutWheel from './LocknutWheel';
 import MobileBreakdown from './MobileBreakdown';
+import aos from 'aos';
 
 const App = () => {
+
+  React.useEffect(() => {
+    aos.init({ duration: 1000 });
+  }, []);
 
   return (
     <>

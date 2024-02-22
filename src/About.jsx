@@ -1,14 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'aos/dist/aos.css';
-import aos from 'aos';
 import { Link } from 'react-router-dom';
 
 function About() {
-  React.useEffect(() => {
-    aos.init({ duration: 1000 });
-  }, []);
-
+  
   const headerStyle = {
     marginTop: '95px',
     backgroundImage: `url("https://via.placeholder.com/1200x400")`,
