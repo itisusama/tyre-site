@@ -12,6 +12,12 @@ import { Helmet } from 'react-helmet';
 import MobileTyreFitting from './MobileTyreFitting';
 import MobileTyreRepair from './MobileTyreRepair';
 import TyreReplacement from './TyreReplacement';
+import FlatTyre from './FlatTyre';
+import BurstTyre from './BurstTyre';
+import PartWornTyre from './PartWornTyre';
+import JumpStart from './JumpStart';
+import LocknutWheel from './LocknutWheel';
+import MobileBreakdown from './MobileBreakdown';
 
 const App = () => {
 
@@ -31,6 +37,12 @@ const App = () => {
         <Route path="/services/mobile-tyre-fitting" element={<MobileTyreFitting/>} />
         <Route path="/services/mobile-tyre-repair" element={<MobileTyreRepair/>} />
         <Route path="/services/tyre-replacement" element={<TyreReplacement/>} />
+        <Route path="/services/flat-tyre" element={<FlatTyre/>} />
+        <Route path="/services/burst-tyre" element={<BurstTyre/>} />
+        <Route path="/services/part-worn-tyre" element={<PartWornTyre/>} />
+        <Route path="/services/jumpstart" element={<JumpStart/>} />
+        <Route path="/services/locknut-wheel-removal" element={<LocknutWheel/>} />
+        <Route path="/services/mobile-breakdown" element={<MobileBreakdown/>} />
       </Routes>
       <Footer/>
     </Router>
