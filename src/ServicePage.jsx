@@ -17,7 +17,17 @@ const headerStyle = {
 };
 
 const ServicePage = ({pageTitle, ...otherProps}) => {
-    const { headingTwo, headingOne, headingThree, headingFour, headingFive, paraOne, paraTwo, paraThree } = otherProps;
+    const { 
+        headingTwo, 
+        headingOne, 
+        headingThree, 
+        headingFour, 
+        headingFive, 
+        paraOne, 
+        paraTwo, 
+        paraThree,
+        paraFour,
+        paraFive } = otherProps;
   return (
     <>
       {/* Banner Section */}
@@ -109,7 +119,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
                     </div>
                 </div>
             </div>
-        <div className='w-75 mx-auto'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate.</p></div>
+        <div className='w-75 mx-auto'><p>{paraFour}</p></div>
     </div>
     
     {/* Image and text */}
@@ -120,9 +130,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             </Col>
             <Col md={6} className='order-1'>
                 <h2>{headingFive}</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
-                Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
-                Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, mollitia.</p>
+                <p>{paraFive}</p>
             </Col>
         </Row>
     </div>
