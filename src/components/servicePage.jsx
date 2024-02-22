@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
-import HowSection from './components/HowSection';
+import HowSection from './HowSection';
 
 const headerStyle = {
     marginTop: '95px',
@@ -16,7 +16,7 @@ const headerStyle = {
     height: '50vh'
 };
 
-const MobileTyreFitting = ({ pageTitle }) => {
+const servicePage = ({ pageTitle }) => {
   return (
     <>
      {/* Banner Section */}
@@ -133,4 +133,4 @@ const MobileTyreFitting = ({ pageTitle }) => {
   )
 }
 
-export default MobileTyreFitting
+export default servicePage

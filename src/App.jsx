@@ -10,6 +10,7 @@ import ContactPage from './Contact';
 import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
 import MobileTyreFitting from './MobileTyreFitting';
+import MobileTyreRepair from './MobileTyreRepair';
 
 const App = () => {
 
@@ -26,7 +27,8 @@ const App = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/blogs" element={<BlogPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
-        <Route path="/mobile-tyre-fitting" element={<MobileTyreFitting/>} />
+        <Route path="/mobile-tyre-fitting" element={<MobileTyreFitting pageTitle="Mobile Tyre Fitting"/>} />
+        <Route path="/mobile-tyre-repair" element={<MobileTyreRepair/>} />
       </Routes>
       <Footer/>
     </Router>
