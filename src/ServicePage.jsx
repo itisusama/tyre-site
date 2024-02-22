@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
-import HowSection from './HowSection';
+import HowSection from './components/HowSection';
 
 const headerStyle = {
     marginTop: '95px',
@@ -16,10 +16,11 @@ const headerStyle = {
     height: '50vh'
 };
 
-const servicePage = ({ pageTitle }) => {
+const ServicePage = ({pageTitle, ...otherProps}) => {
+    const { headingTwo, headingOne, headingThree, headingFour, headingFive, paraOne, paraTwo, paraThree } = otherProps;
   return (
     <>
-     {/* Banner Section */}
+      {/* Banner Section */}
      <header style={headerStyle}>
         <h1>{pageTitle}</h1>
         <h5><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | {pageTitle}</h5>
@@ -29,11 +30,11 @@ const servicePage = ({ pageTitle }) => {
             <div className="row text-center justify-content-center">
                 <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                     <div className="section-title">
-                        <h2 className="sec-title">The Heading Goes Here</h2>
+                        <h2 className="sec-title">{headingOne}</h2>
                     </div>
                 </div>
             </div>
-        <div className='w-75 mx-auto'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis, sit amet fringilla odio lectus nec nunc. Ut auctor velit sit amet tortor efficitur, vel tincidunt purus pellentesque. Nunc quis odio sit amet velit ullamcorper rhoncus. Vivamus nec purus in elit hendrerit tincidunt. Proin a urna vel sapien vestibulum feugiat. Curabitur nec justo et justo tincidunt tincidunt. Integer in ultricies erat. Vestibulum ac eros eu turpis convallis bibendum ut non quam.</p></div>
+        <div className='w-75 mx-auto'><p>{paraOne}</p></div>
     </div>
 
     {/* Image and Text */}
@@ -43,10 +44,8 @@ const servicePage = ({ pageTitle }) => {
                 <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
             </Col>
             <Col md={6}>
-                <h2>Heading Goes Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
-                Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
-                Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.</p>
+                <h2>{headingTwo}</h2>
+                <p>{paraTwo}</p>
                 <a href="" className="btn btn-success rounded-pill py-2 px-4">Contact Us</a>
             </Col>
         </Row>
@@ -58,11 +57,11 @@ const servicePage = ({ pageTitle }) => {
                 <div className="row text-center justify-content-center">
                     <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                         <div className="section-title">
-                            <h2 className="sec-title">The Heading Goes Here</h2>
+                            <h2 className="sec-title">{headingThree}</h2>
                         </div>
                     </div>
                 </div>
-            <div className='w-75 mx-auto'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate.</p></div>
+            <div className='w-75 mx-auto'><p>{paraThree}</p></div>
         </div>
         <div className="row">
             {/* 1 */}
@@ -106,7 +105,7 @@ const servicePage = ({ pageTitle }) => {
             <div className="row text-center justify-content-center">
                 <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                     <div className="section-title">
-                        <h2 className="sec-title">The Heading Goes Here</h2>
+                        <h2 className="sec-title">{headingFour}</h2>
                     </div>
                 </div>
             </div>
@@ -120,7 +119,7 @@ const servicePage = ({ pageTitle }) => {
                 <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
             </Col>
             <Col md={6} className='order-1'>
-                <h2>Heading Goes Here</h2>
+                <h2>{headingFive}</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
                 Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
                 Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, mollitia.</p>
@@ -133,4 +132,4 @@ const servicePage = ({ pageTitle }) => {
   )
 }
 
-export default servicePage
+export default ServicePage
