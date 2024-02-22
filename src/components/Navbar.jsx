@@ -30,9 +30,9 @@ const Navbar = () => {
               <div className="nav-item dropdown">
                 <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" activeClassName="active">Services</Link>
                 <div className="dropdown-menu m-0">
-                  <Link to="/mobile-tyre-fitting" className="dropdown-item">Mobile Tyre Fitting</Link>
-                  <Link to="/mobile-tyre-repair" className="dropdown-item">Mobile Tyre Repair</Link>
-                  <Link to="#" className="dropdown-item">Service</Link>
+                  <Link to="/services/mobile-tyre-fitting" className="dropdown-item">Mobile Tyre Fitting</Link>
+                  <Link to="/services/mobile-tyre-repair" className="dropdown-item">Mobile Tyre Repair</Link>
+                  <Link to="/services/tyre-replacement" className="dropdown-item">Tyre Replacement</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
                   <Link to="#" className="dropdown-item">Service</Link>
