@@ -3,71 +3,17 @@ import React from 'react'
 const Carousel = () => {
   return (
     <>
-
-    <div id="carouselExample" className="carousel slide">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-    <section style={{ paddingLeft: 0 }} className='ts-heading mb-4'>
-      <div className='p-5 text-center ts-bg-image'>
-        <div className='mask p-4 ts-box-shadow rounded'>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>Heading</h1>
-              <h4 className='mb-3'>Subheading</h4>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                Call to action
-              </a>
-            </div>
-          </div>
+    <section className='ts-heading'>
+      <div className="d-sm-flex align-items-center justify-content-between w-100" style={{ height: '82vh' }}>
+        <div className="col-md-4 mx-auto mb-4 mb-sm-0 headline container">
+          <span className="text-secondary text-uppercase" data-aos="fade-right">Subheadline</span>
+          <h1 className="display-4 my-4 font-weight-bold" data-aos="fade-right">Enter Your <span style={{ color: 'green' }}>Headline Here</span></h1>
+          <a href="#" className="btn btn-success px-5 py-3 text-white mt-3 mt-sm-0" data-aos="fade-right">Get Started</a>
         </div>
+        {/* in mobile remove the clippath */}
+        <div className="col-md-8 h-100 clipped" data-aos="fade-left" style={{ minHeight: '350px', backgroundImage: 'url(https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80)', backgroundPosition: 'center', backgroundSize: 'cover' }}></div>
       </div>
     </section>
-    </div>
-    <div className="carousel-item">
-    <section style={{ paddingLeft: 0 }} className='ts-heading mb-4'>
-      <div className='p-5 text-center ts-bg-image'>
-        <div className='mask p-4 ts-box-shadow rounded'>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>Heading</h1>
-              <h4 className='mb-3'>Subheading</h4>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                Call to action
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-    <div className="carousel-item">
-    <section style={{ paddingLeft: 0 }} className='ts-heading mb-4'>
-      <div className='p-5 text-center ts-bg-image'>
-        <div className='mask p-4 ts-box-shadow rounded'>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>Heading</h1>
-              <h4 className='mb-3'>Subheading</h4>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                Call to action
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-
     </>
   )
 }

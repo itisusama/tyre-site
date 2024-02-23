@@ -1,43 +1,107 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import $ from 'jquery';
 
 const Cards = () => {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleNextClick = () => {
+      const carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      const cardWidth = $(".carousel-item").width();
+
+      if (scrollPosition < carouselWidth - cardWidth * 4) {
+        setScrollPosition(scrollPosition + cardWidth);
+        $(".carousel-inner").animate({ scrollLeft: scrollPosition + cardWidth }, 600);
+      }
+    };
+
+    const handlePrevClick = () => {
+      const cardWidth = $(".carousel-item").width();
+
+      if (scrollPosition > 0) {
+        setScrollPosition(scrollPosition - cardWidth);
+        $(".carousel-inner").animate({ scrollLeft: scrollPosition - cardWidth }, 600);
+      }
+    };
+
+    $(".carousel-control-next").on("click", handleNextClick);
+    $(".carousel-control-prev").on("click", handlePrevClick);
+
+    return () => {
+      // Cleanup event listeners
+      $(".carousel-control-next").off("click", handleNextClick);
+      $(".carousel-control-prev").off("click", handlePrevClick);
+    };
+  }, [scrollPosition]);
+
+
   return (
     <>
-    <section className="container">
-      <div className="row">
+    <div id="carouselExampleControls" className="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <div className="card" data-aos="zoom-in">
+            <div className="img-wrapper">
+              <img src="https://via.placeholder.com/500x350" alt="..." />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">Card title 1</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" className="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+        {/* 2 */}
+        <div className="carousel-item">
+          <div className="card" data-aos="zoom-in">
+            <div className="img-wrapper">
+              <img src="https://via.placeholder.com/500x350" alt="..." />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">Card title 1</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" className="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+        {/* 3 */}
+        <div className="carousel-item">
+          <div className="card" data-aos="zoom-in">
+            <div className="img-wrapper">
+              <img src="https://via.placeholder.com/500x350" alt="..." />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">Card title 1</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" className="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+        {/* 4 */}
+        <div className="carousel-item">
+          <div className="card" data-aos="zoom-in">
+            <div className="img-wrapper">
+              <img src="https://via.placeholder.com/500x350" alt="..." />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">Card title 1</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" className="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
         
-        <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
-            <div>
-              <img src={'images/img-10.jpg'} alt="1" className='img-fluid rounded' />
-
-              <h2 className='fw-bolder text-center'>Card Heading</h2>
-              <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>
-              <div className='d-flex justify-content-center'><button className='btn btn-success rounded-pill py-2 px-4'>Read More</button></div>
-            </div>
-        </div>
-
-        <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
-            <div>
-              <img src={'images/img-11.jpg'} alt="1" className='img-fluid rounded' />
-
-              <h2 className='fw-bolder text-center'>Card Heading</h2>
-              <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>
-              <div className='d-flex justify-content-center'><button className='btn btn-success rounded-pill py-2 px-4'>Read More</button></div>
-            </div>
-        </div>
-
-        <div className="col-lg-4 col-md-6 col-sm-12 mt-2 py-2 rounded">
-            <div>
-              <img src={'images/img-12.jpg'} alt="1" className='img-fluid rounded' />
-
-              <h2 className='fw-bolder text-center'>Card Heading</h2>
-              <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ad alias eveniet deleniti, consectetur amet? Animi, corporis eligendi. Commodi cum ex doloribus, dolor, iusto voluptas minus magnam similique, eos atque magni?</p>
-              <div className='d-flex justify-content-center'><button className='btn btn-success rounded-pill py-2 px-4'>Read More</button></div>
-            </div>
-        </div>
-
       </div>
-    </section>    
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>    
     </>
   )
 }
