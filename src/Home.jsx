@@ -27,10 +27,10 @@ const Home = () => {
       </section>
 
      <div className='mt-4'>
-        <div className="row text-center justify-content-center">
+        <div className="row text-center justify-content-center" data-aos="zoom-in-up">
             <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                 <div className="section-title">
-                    <h2 className="sec-title" data-aos="zoom-in-up">The Heading Goes Here</h2>
+                    <h2 className="sec-title">The Heading Goes Here</h2>
                 </div>
             </div>
         </div>

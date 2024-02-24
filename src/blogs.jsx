@@ -59,22 +59,22 @@ function BlogPage() {
     <div>
       {/* Banner Section */}
       <header style={headerStyle}>
-        <h1>Blogs</h1>
-        <h5><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Blogs</h5>
+        <h1 data-aos="fade-right">Blogs</h1>
+        <h5 data-aos="fade-left"><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Blogs</h5>
       </header>
 
       {/* Main Content */}
       <Container className="py-5">
         {posts.map(post => (
           <Row key={post.id} className="mt-5">
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right">
               <img src={post.imageUrl} alt={post.title} className="img-fluid mb-3" />
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-left">
               <div className='mt-5'>
                 <h2>{post.title}</h2>
                 <p>{post.content.slice(0, 150)}...</p>
-                <Link to={`/blog/${post.id}`} className="btn btn-primary rounded-pill">Read More</Link>
+                <Link to={`/blog/${post.id}`} className="btn btn-success">Read More</Link>
               </div>
             </Col>
           </Row>
