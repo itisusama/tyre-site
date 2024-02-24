@@ -64,19 +64,19 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     {/* Image overlay */}
     <section className='container mt-4'>
         <div className='mt-4'>
-                <div className="row text-center justify-content-center">
+                <div className="row text-center justify-content-center" data-aos='fade-right'>
                     <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                         <div className="section-title">
                             <h2 className="sec-title">{headingThree}</h2>
                         </div>
                     </div>
                 </div>
-            <div className='w-75 mx-auto'><p>{paraThree}</p></div>
+            <div className='w-75 mx-auto' data-aos='fade-left'><p>{paraThree}</p></div>
         </div>
         <div className="row">
             {/* 1 */}
-            <div className="col-md-4">
-                <div className="parent-container">
+            <div className="col-md-4" >
+                <div className="parent-container" data-aos="zoom-in">
                     <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
 
                     <div className="overlay">
@@ -87,7 +87,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             </div>
             {/* 2 */}
             <div className="col-md-4">
-                <div className="parent-container">
+                <div className="parent-container" data-aos="zoom-in">
                     <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
 
                     <div className="overlay">
@@ -98,7 +98,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             </div>
             {/* 3 */}
             <div className="col-md-4">
-                <div className="parent-container">
+                <div className="parent-container" data-aos="zoom-in">
                     <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
 
                     <div className="overlay">
@@ -112,23 +112,23 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     </section>
     {/* Text */}
     <div className='mt-4'>
-            <div className="row text-center justify-content-center">
+            <div className="row text-center justify-content-center" data-aos="fade-right">
                 <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                     <div className="section-title">
                         <h2 className="sec-title">{headingFour}</h2>
                     </div>
                 </div>
             </div>
-        <div className='w-75 mx-auto'><p>{paraFour}</p></div>
+        <div className='w-75 mx-auto' data-aos="fade-left"><p>{paraFour}</p></div>
     </div>
     
     {/* Image and text */}
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
-            <Col md={6} className='order-2'>
+            <Col md={6} className='order-2' data-aos="fade-left">
                 <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
             </Col>
-            <Col md={6} className='order-1'>
+            <Col md={6} className='order-1' data-aos="fade-right">
                 <h2>{headingFive}</h2>
                 <p>{paraFive}</p>
             </Col>
