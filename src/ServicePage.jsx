@@ -32,28 +32,28 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     <>
       {/* Banner Section */}
      <header style={headerStyle}>
-        <h1>{pageTitle}</h1>
-        <h5><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | {pageTitle}</h5>
+        <h1 data-aos='fade-right'>{pageTitle}</h1>
+        <h5 data-aos='fade-left'><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | {pageTitle}</h5>
     </header>
     
     <div className='mt-4'>
-            <div className="row text-center justify-content-center">
+            <div className="row text-center justify-content-center" data-aos='fade-right'>
                 <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                     <div className="section-title">
-                        <h2 className="sec-title">{headingOne}</h2>
+                        <h2 className="sec-title" data-aos='fade-right'>{headingOne}</h2>
                     </div>
                 </div>
             </div>
-        <div className='w-75 mx-auto'><p>{paraOne}</p></div>
+        <div className='w-75 mx-auto' data-aos='fade-right'><p>{paraOne}</p></div>
     </div>
 
     {/* Image and Text */}
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
-            <Col md={6}>
+            <Col md={6} data-aos='fade-right'>
                 <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos='fade-left'>
                 <h2>{headingTwo}</h2>
                 <p>{paraTwo}</p>
                 <a href="" className="btn btn-success rounded-pill py-2 px-4">Contact Us</a>
