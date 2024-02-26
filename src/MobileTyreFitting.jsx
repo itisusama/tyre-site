@@ -18,7 +18,14 @@ const MobileTyreFitting = () => {
   return (
     <>
      <ServicePage
+        // Images
         mergedHeaderStyle={headerStyle}
+        imgOne="/images/img-11.jpg"
+        imgTwo="/images/img-11.jpg"
+        imgThree="/images/img-11.jpg"
+        imgFour="/images/img-11.jpg"
+        imgFive="/images/img-11.jpg"
+        // Text
         pageTitle="Mobile Tyre Fitting"
         headingOne="heading one goes here"
         headingTwo="heading two goes here"

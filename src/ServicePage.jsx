@@ -15,7 +15,12 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
         paraThree,
         paraFour,
         paraFive,
-        mergedHeaderStyle
+        mergedHeaderStyle,
+        imgOne,
+        imgTwo,
+        imgThree,
+        imgFour,
+        imgFive
      } = otherProps;
 
   return (
@@ -41,7 +46,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
             <Col md={6} data-aos='fade-right'>
-                <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
+                <img src={imgOne} alt="Mission" className="img-fluid rounded" />
             </Col>
             <Col md={6} data-aos='fade-left'>
                 <h2>{headingTwo}</h2>
@@ -67,7 +72,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             {/* 1 */}
             <div className="col-md-4" >
                 <div className="parent-container" data-aos="zoom-in">
-                    <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
+                    <img src={imgTwo} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
                         <h5>Something Heading</h5>
@@ -78,7 +83,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             {/* 2 */}
             <div className="col-md-4">
                 <div className="parent-container" data-aos="zoom-in">
-                    <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
+                    <img src={imgThree} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
                         <h5>Something Heading</h5>
@@ -89,7 +94,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             {/* 3 */}
             <div className="col-md-4">
                 <div className="parent-container" data-aos="zoom-in">
-                    <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
+                    <img src={imgFour} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
                         <h5>Something Heading</h5>
@@ -116,7 +121,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
             <Col md={6} className='order-2' data-aos="fade-left">
-                <img src="https://via.placeholder.com/500x350" alt="Mission" className="img-fluid" />
+                <img src={imgFive} alt="Mission" className="img-fluid rounded" />
             </Col>
             <Col md={6} className='order-1' data-aos="fade-right">
                 <h2>{headingFive}</h2>
