@@ -1,10 +1,24 @@
 import React from 'react'
 import ServicePage from './ServicePage'
 
+const headerStyle = {
+  marginTop: '95px',
+  backgroundImage: `url("/images/banner.jpg")`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  color: 'white',
+  textAlign: 'center',
+  paddingTop: '8rem',
+  paddingBottom: '8rem',
+  height: '50vh'
+};
+
 const MobileTyreFitting = () => {
   return (
     <>
      <ServicePage
+        mergedHeaderStyle={headerStyle}
         pageTitle="Mobile Tyre Fitting"
         headingOne="heading one goes here"
         headingTwo="heading two goes here"

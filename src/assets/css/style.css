@@ -502,9 +502,10 @@ html, body{
     display: none !important;
 }
 
-.linkStyle{
+.fa-house, .linkStyle{
     text-decoration: none;
-}
+    color: var(--bs-success);
+  }
 /* Overlay */
 .parent-container {
     position: relative;

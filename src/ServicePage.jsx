@@ -3,19 +3,6 @@ import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import HowSection from './components/HowSection';
 
-const headerStyle = {
-    marginTop: '95px',
-    backgroundImage: `url("https://via.placeholder.com/1200x400")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    color: 'white',
-    textAlign: 'center',
-    paddingTop: '8rem',
-    paddingBottom: '8rem',
-    height: '50vh'
-};
-
 const ServicePage = ({pageTitle, ...otherProps}) => {
     const { 
         headingTwo, 
@@ -27,11 +14,14 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
         paraTwo, 
         paraThree,
         paraFour,
-        paraFive } = otherProps;
+        paraFive,
+        mergedHeaderStyle
+     } = otherProps;
+
   return (
     <>
       {/* Banner Section */}
-     <header style={headerStyle}>
+     <header style={mergedHeaderStyle}>
         <h1 data-aos='fade-right'>{pageTitle}</h1>
         <h5 data-aos='fade-left'><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | {pageTitle}</h5>
     </header>

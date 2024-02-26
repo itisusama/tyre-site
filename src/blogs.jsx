@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const headerStyle = {
     marginTop: '95px',
-    backgroundImage: `url("https://via.placeholder.com/1200x400")`,
+    backgroundImage: `url("images/banner.jpg")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -20,31 +20,31 @@ const blogPosts = [
     id: 1,
     title: 'Lorem Ipsum Dolor Sit Amet',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    imageUrl: 'https://via.placeholder.com/500x350?text=Blog+Post+1',
+    imageUrl: 'images/img-11.jpg',
   },
   {
     id: 2,
     title: 'Consectetur Adipisicing Elit',
     content: 'Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
-    imageUrl: 'https://via.placeholder.com/500x350?text=Blog+Post+2',
+    imageUrl: 'images/img-11.jpg',
   },
   {
     id: 3,
     title: 'Lorem Ipsum Dolor Sit Amet',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    imageUrl: 'https://via.placeholder.com/500x350?text=Blog+Post+1',
+    imageUrl: 'images/img-11.jpg',
   },
   {
     id: 4,
     title: 'Consectetur Adipisicing Elit',
     content: 'Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
-    imageUrl: 'https://via.placeholder.com/500x350?text=Blog+Post+2',
+    imageUrl: 'images/img-11.jpg',
   },
   {
     id: 5,
     title: 'Lorem Ipsum Dolor Sit Amet',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    imageUrl: 'https://via.placeholder.com/500x350?text=Blog+Post+1',
+    imageUrl: 'images/img-11.jpg',
   },
 ];
 
@@ -68,7 +68,7 @@ function BlogPage() {
         {posts.map(post => (
           <Row key={post.id} className="mt-5">
             <Col md={6} data-aos="fade-right">
-              <img src={post.imageUrl} alt={post.title} className="img-fluid mb-3" />
+              <img src={post.imageUrl} alt={post.title} className="img-fluid mb-3 rounded" />
             </Col>
             <Col md={6} data-aos="fade-left">
               <div className='mt-5'>

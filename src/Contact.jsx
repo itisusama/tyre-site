@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const headerStyle = {
     marginTop: '95px',
-    backgroundImage: `url("https://via.placeholder.com/1200x400")`,
+    backgroundImage: `url("images/banner.jpg")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -59,7 +59,7 @@ function ContactPage() {
                         </Form>
                     </Col>
                     <Col md={6} data-aos='fade-left' className="d-flex align-items-center justify-content-center">
-                        <img src="https://via.placeholder.com/400x400" alt="Contact" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                        <img src={"images/img-12.jpg"} alt="Contact" className='rounded' style={{ maxWidth: '100%', maxHeight: '100%' }} />
                     </Col>
                 </Row>
                 <Row>

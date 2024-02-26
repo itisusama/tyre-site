@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 
 function About() {
   
   const headerStyle = {
     marginTop: '95px',
-    backgroundImage: `url("https://via.placeholder.com/1200x400")`,
+    backgroundImage: `url("images/banner.jpg")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -46,7 +45,7 @@ function About() {
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
           <Col md={6} data-aos="fade-left">
-            <img src="https://via.placeholder.com/500x350?text=Tire+Service" alt="Mission" className="img-fluid" />
+            <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
 
@@ -59,7 +58,7 @@ function About() {
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
           <Col md={6} data-aos="fade-right" className='order-1'>
-            <img src="https://via.placeholder.com/500x350?text=Our+Team" alt="Mission" className="img-fluid" />
+            <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
 
