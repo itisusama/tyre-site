@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './components/Carousel';
+import Hero from './components/Carousel';
 import { Row, Col } from 'react-bootstrap';
 import Cards from './components/Cards';
 import Testimonial from './components/Testimonial';
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
 
-     <Carousel/>
+     <Hero/>
 
       <section className='container'>
         <Row style={{ marginTop: '4rem' }}>

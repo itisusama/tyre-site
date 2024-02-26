@@ -591,9 +591,19 @@ html, body{
   }
 
   /* Hero */
-  .headline {
-    left: 130px;
+  .headline, .headline span, .headline h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   } 
+
+  @media (max-width: 575px){
+    .hero__section{
+        margin-bottom: 230px;
+      }
+  }
+
   .clipped {
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
   }

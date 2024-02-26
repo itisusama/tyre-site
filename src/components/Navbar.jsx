@@ -28,7 +28,7 @@ const Navbar = () => {
             <NavLink to="/about" className="nav-item nav-link" activeClassName="active">About</NavLink>
             <NavLink to="/blogs" className="nav-item nav-link" activeClassName="active">Blog</NavLink>
               <div className="nav-item dropdown">
-                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" activeClassName="active">Services</Link>
+                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                 <div className="dropdown-menu m-0">
                   <Link to="/services/mobile-tyre-fitting" className="dropdown-item">Mobile Tyre Fitting</Link>
                   <Link to="/services/mobile-tyre-repair" className="dropdown-item">Mobile Tyre Repair</Link>
@@ -43,7 +43,6 @@ const Navbar = () => {
               </div>
               <NavLink to="/contact" className="nav-item nav-link" activeClassName="active">Contact</NavLink>
             </div>
-            <a href="" className="btn btn-success rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
           </div>
         </nav>
     </div>
