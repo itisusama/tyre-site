@@ -16,9 +16,9 @@ const Navbar = () => {
 
        <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-dark px-4 px-lg-5 py-2 py-lg-0">
-          <a href="" className="navbar-brand p-0">
+          <Link to="/" className="navbar-brand p-0">
             <h1 className="m-0">Tyre Site</h1>
-          </a>
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="fa fa-bars"></span>
           </button>
