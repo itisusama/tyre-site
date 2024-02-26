@@ -347,6 +347,7 @@ html, body{
 
   blockquote img{
     border-radius: 50%;
+    margin-top: 10px;
   }
 
   #slider-container {
@@ -597,6 +598,7 @@ html, body{
     justify-content: center;
     align-items: center;
   } 
+
 
   @media (max-width: 575px){
     .hero__section{

@@ -21,7 +21,7 @@ const Home = () => {
             Suscipit architecto rem voluptatibus quibusdam provident. sint dolor velit reiciendis voluptatum, nihil quia corrupti</p>
           </Col>
           <Col md={6} data-aos="fade-left">
-            <img src="https://via.placeholder.com/500x350?text=Heading" alt="Mission" className="img-fluid" />
+            <img src={"images/img-10.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
       </section>
@@ -51,7 +51,7 @@ const Home = () => {
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
           <Col md={6} className='order-1' data-aos="fade-right">
-            <img src="https://via.placeholder.com/500x350?text=Tire+Service" alt="Mission" className="img-fluid" />
+            <img src={"images/img-10.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
       </section>

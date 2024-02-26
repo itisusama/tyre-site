@@ -43,7 +43,7 @@ const Cards = () => {
         <div className="carousel-item active">
           <div className="card" data-aos="zoom-in">
             <div className="img-wrapper">
-              <img src="https://via.placeholder.com/500x350" alt="..." />
+              <img src={"images/img-11.jpg"} alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title">Card title 1</h5>
@@ -56,7 +56,7 @@ const Cards = () => {
         <div className="carousel-item">
           <div className="card" data-aos="zoom-in">
             <div className="img-wrapper">
-              <img src="https://via.placeholder.com/500x350" alt="..." />
+              <img src={"images/img-11.jpg"} alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title">Card title 1</h5>
@@ -69,7 +69,7 @@ const Cards = () => {
         <div className="carousel-item">
           <div className="card" data-aos="zoom-in">
             <div className="img-wrapper">
-              <img src="https://via.placeholder.com/500x350" alt="..." />
+              <img src={"images/img-11.jpg"} alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title">Card title 1</h5>
@@ -82,7 +82,7 @@ const Cards = () => {
         <div className="carousel-item">
           <div className="card" data-aos="zoom-in">
             <div className="img-wrapper">
-              <img src="https://via.placeholder.com/500x350" alt="..." />
+              <img src={"images/img-11.jpg"} alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title">Card title 1</h5>
