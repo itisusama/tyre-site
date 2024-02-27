@@ -3,24 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function About() {
-  
-  const headerStyle = {
-    marginTop: '95px',
-    backgroundImage: `url("images/banner.jpg")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    color: 'white',
-    textAlign: 'center',
-    paddingTop: '8rem',
-    paddingBottom: '8rem',
-    height: '50vh'
-  };
 
   return (
     <div>
       {/* Banner Section */}
-      <header style={headerStyle}>
+      <header className='headerStyle'>
         <h1 data-aos="fade-right">About Us</h1>
         <h5 data-aos="fade-left"><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | About</h5>
       </header>
@@ -37,33 +24,33 @@ function About() {
      </div> 
       <Container className="py-5">
         <Row style={{ marginTop: '4rem' }}>
-          <Col md={6} data-aos="fade-right">
+          <Col lg={6} data-aos="fade-right">
             <h2>Our Mission</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
             Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
             Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
-          <Col md={6} data-aos="fade-left">
+          <Col lg={6} data-aos="fade-left" className='order-small-1'>
             <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
 
         <Row style={{ marginTop: '4rem' }}>
-          <Col md={6} data-aos="fade-left" className='order-2'>
+          <Col lg={6} data-aos="fade-left" className='order-2'>
             <h2>Our Team</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
             Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
             Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
-          <Col md={6} data-aos="fade-right" className='order-1'>
+          <Col lg={6} data-aos="fade-right" className='order-1'>
             <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
 
         <Row className="mt-5" data-aos="fade-up">
-          <Col md={6}>
+          <Col lg={6}>
             <h2>Why Choose Us?</h2>
             <ul>
               <li>Convenient mobile service</li>
@@ -73,7 +60,7 @@ function About() {
               <li>Customer satisfaction guarantee</li>
             </ul>
           </Col>
-          <Col md={6}>
+          <Col lg={6}>
             <h2>Our Values</h2>
             <p>At Mobile Fit Tyres, we prioritize integrity, reliability, and safety in everything we do. We strive to build lasting relationships with our customers based on trust and transparency.</p>
           </Col>

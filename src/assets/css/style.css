@@ -619,3 +619,25 @@ html, body{
       max-height: 300px !important;
     }
   }
+
+  .headerStyle{
+    margin-top: 95px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: 50vh;
+  }
+
+  @media (max-width: 991px){
+    .headerStyle{
+        margin-top: 0;
+    }
+    .order-small-1{
+        order: -1;
+    }
+  }

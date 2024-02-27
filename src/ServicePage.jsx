@@ -105,6 +105,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             {/* end */}
         </div>
     </section>
+    
     {/* Text */}
     <div className='mt-4'>
             <div className="row text-center justify-content-center" data-aos="fade-right">
