@@ -31,7 +31,7 @@ function About() {
             Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
-          <Col lg={6} data-aos="fade-left" className='order-small-1'>
+          <Col lg={6} data-aos="fade-left" className='order-small-1 d-flex justify-content-center'>
             <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
@@ -44,7 +44,7 @@ function About() {
             Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
-          <Col lg={6} data-aos="fade-right" className='order-1'>
+          <Col lg={6} data-aos="fade-right" className='order-1 d-flex justify-content-center'>
             <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>

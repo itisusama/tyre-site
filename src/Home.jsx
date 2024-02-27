@@ -15,12 +15,12 @@ const Home = () => {
 
       <section className='container'>
         <Row style={{ marginTop: '4rem' }}>
-          <Col md={6} data-aos="fade-right">
+          <Col lg={6} data-aos="fade-right">
             <h2>Heading</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
             Suscipit architecto rem voluptatibus quibusdam provident. sint dolor velit reiciendis voluptatum, nihil quia corrupti</p>
           </Col>
-          <Col md={6} data-aos="fade-left">
+          <Col lg={6} data-aos="fade-left" className='order-small-1 d-flex justify-content-center'>
             <img src={"images/img-10.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
@@ -43,14 +43,14 @@ const Home = () => {
 
      <section className='container'>
         <Row style={{ marginTop: '6rem' }}>
-          <Col md={6} className='order-2' data-aos="fade-left">
+          <Col lg={6} className='order-2' data-aos="fade-left">
             <h2>Our Mission</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet, praesentium consectetur, temporibus assumenda eius maiores possimus explicabo quos officiis dolorum quod? Vitae harum delectus porro perspiciatis architecto ipsum sed.
             Suscipit architecto rem voluptatibus quibusdam provident. Error excepturi sunt perspiciatis earum accusantium, cum blanditiis eius similique vero pariatur. Ea debitis explicabo accusamus molestiae ullam unde sunt provident saepe voluptatum animi?
             Et nulla saepe quis esse ad ut, ea quod earum illum labore sint dolor velit reiciendis voluptatum, nihil quia corrupti, explicabo sit ex rem suscipit! Mollitia voluptatibus iste ab ex.
             Iure autem molestiae perferendis hic nesciunt id eos voluptas deserunt necessitatibus est eum, eaque labore aspernatur reprehenderit itaque totam adipisci vel. Fugit voluptates culpa debitis. Autem cupiditate ipsum suscipit natus?</p>
           </Col>
-          <Col md={6} className='order-1' data-aos="fade-right">
+          <Col lg={6} className='order-1 d-flex justify-content-center' data-aos="fade-right">
             <img src={"images/img-10.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>

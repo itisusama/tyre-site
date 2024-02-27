@@ -45,10 +45,10 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     {/* Image and Text */}
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
-            <Col md={6} data-aos='fade-right'>
+            <Col lg={6} data-aos='fade-right'>
                 <img src={imgOne} alt="Mission" className="img-fluid rounded" />
             </Col>
-            <Col md={6} data-aos='fade-left'>
+            <Col lg={6} data-aos='fade-left'>
                 <h2>{headingTwo}</h2>
                 <p>{paraTwo}</p>
                 <a href="" className="btn btn-success rounded-pill py-2 px-4">Contact Us</a>
@@ -71,7 +71,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
         <div className="row">
             {/* 1 */}
             <div className="col-md-4" >
-                <div className="parent-container" data-aos="zoom-in">
+                <div className="parent-container my-2" data-aos="zoom-in">
                     <img src={imgTwo} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
@@ -82,7 +82,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             </div>
             {/* 2 */}
             <div className="col-md-4">
-                <div className="parent-container" data-aos="zoom-in">
+                <div className="parent-container my-2" data-aos="zoom-in">
                     <img src={imgThree} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
@@ -93,7 +93,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
             </div>
             {/* 3 */}
             <div className="col-md-4">
-                <div className="parent-container" data-aos="zoom-in">
+                <div className="parent-container my-2" data-aos="zoom-in">
                     <img src={imgFour} alt="Mission" className="img-fluid rounded" />
 
                     <div className="overlay">
@@ -121,10 +121,10 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     {/* Image and text */}
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
-            <Col md={6} className='order-2' data-aos="fade-left">
+            <Col lg={6} className='order-2 d-flex justify-content-center' data-aos="fade-left">
                 <img src={imgFive} alt="Mission" className="img-fluid rounded" />
             </Col>
-            <Col md={6} className='order-1' data-aos="fade-right">
+            <Col lg={6} className='order-1' data-aos="fade-right">
                 <h2>{headingFive}</h2>
                 <p>{paraFive}</p>
             </Col>

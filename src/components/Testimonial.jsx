@@ -5,7 +5,7 @@ const Testimonial = () => {
     <>
     <section id="slider-container">
         <div id="testimonials">
-        <figure classNAme="single-testimonial">
+        <figure className="single-testimonial">
     <blockquote>
         <img src={"images/person.png"} alt="1" />
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nam, consequuntur adipisci omnis a quibusdam hic. Veritatis perspiciatis obcaecati dolore qui, dolorum ab expedita incidunt sapiente! Debitis ad quos maiores.

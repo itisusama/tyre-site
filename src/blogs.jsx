@@ -2,19 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 
-const headerStyle = {
-    marginTop: '95px',
-    backgroundImage: `url("images/banner.jpg")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    color: 'white',
-    textAlign: 'center',
-    paddingTop: '8rem',
-    paddingBottom: '8rem',
-    height: '50vh'
-  };
-
 const blogPosts = [
   {
     id: 1,
@@ -58,7 +45,7 @@ function BlogPage() {
   return (
     <div>
       {/* Banner Section */}
-      <header style={headerStyle}>
+      <header className='headerStyle'>
         <h1 data-aos="fade-right">Blogs</h1>
         <h5 data-aos="fade-left"><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Blogs</h5>
       </header>
@@ -67,14 +54,14 @@ function BlogPage() {
       <Container className="py-5">
         {posts.map(post => (
           <Row key={post.id} className="mt-5">
-            <Col md={6} data-aos="fade-right">
+            <Col lg={6} data-aos="fade-right" className='d-flex justify-content-center'>
               <img src={post.imageUrl} alt={post.title} className="img-fluid mb-3 rounded" />
             </Col>
-            <Col md={6} data-aos="fade-left">
+            <Col lg={6} data-aos="fade-left">
               <div className='mt-5'>
-                <h2>{post.title}</h2>
-                <p>{post.content.slice(0, 150)}...</p>
-                <Link to={`/blog/${post.id}`} className="btn btn-success">Read More</Link>
+                <h2 className='text-center'>{post.title}</h2>
+                <p className='text-center'>{post.content.slice(0, 150)}...</p>
+                <div className='d-flex justify-content-center'><Link to={`/blog/${post.id}`} className="btn btn-success">Read More</Link></div>
               </div>
             </Col>
           </Row>

@@ -2,24 +2,11 @@ import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const headerStyle = {
-    marginTop: '95px',
-    backgroundImage: `url("images/banner.jpg")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    color: 'white',
-    textAlign: 'center',
-    paddingTop: '8rem',
-    paddingBottom: '8rem',
-    height: '50vh'
-};
-
 function ContactPage() {
     return (
         <div>
             {/* Banner Section */}
-            <header style={headerStyle}>
+            <header className='headerStyle'>
                 <h1 data-aos='fade-right'>Contact Us</h1>
                 <h5 data-aos='fade-left'><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Contact</h5>
             </header>
@@ -37,7 +24,7 @@ function ContactPage() {
             
             <Container className="py-5">
                 <Row>
-                    <Col md={6}>
+                    <Col lg={6}>
                         <h1 data-aos='fade-right'>Contact Us</h1>
                         <p data-aos='fade-right'>Have a question or want to get in touch? Fill out the form below:</p>
                         <Form data-aos='fade-right'>
@@ -58,7 +45,7 @@ function ContactPage() {
                             </Button>
                         </Form>
                     </Col>
-                    <Col md={6} data-aos='fade-left' className="d-flex align-items-center justify-content-center">
+                    <Col lg={6} data-aos='fade-left' className="d-flex align-items-center justify-content-center mt-2">
                         <img src={"images/img-12.jpg"} alt="Contact" className='rounded' style={{ maxWidth: '100%', maxHeight: '100%' }} />
                     </Col>
                 </Row>
