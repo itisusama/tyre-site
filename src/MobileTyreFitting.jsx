@@ -1,25 +1,12 @@
 import React from 'react'
 import ServicePage from './ServicePage'
 
-const headerStyle = {
-  marginTop: '95px',
-  backgroundImage: `url("/images/banner.jpg")`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  color: 'white',
-  textAlign: 'center',
-  paddingTop: '8rem',
-  paddingBottom: '8rem',
-  height: '50vh'
-};
-
 const MobileTyreFitting = () => {
   return (
     <>
      <ServicePage
         // Images
-        mergedHeaderStyle={headerStyle}
+        mergedHeaderStyle="bannerStyle"
         imgOne="/images/img-11.jpg"
         imgTwo="/images/img-11.jpg"
         imgThree="/images/img-11.jpg"

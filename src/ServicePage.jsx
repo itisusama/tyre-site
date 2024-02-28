@@ -26,7 +26,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
   return (
     <>
       {/* Banner Section */}
-     <header style={mergedHeaderStyle}>
+     <header className={mergedHeaderStyle}>
         <h1 data-aos='fade-right'>{pageTitle}</h1>
         <h5 data-aos='fade-left'><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | {pageTitle}</h5>
     </header>
