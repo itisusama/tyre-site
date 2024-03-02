@@ -5,6 +5,7 @@ import Cards from './components/Cards';
 import Testimonial from './components/Testimonial';
 import Banner from './components/Banner';
 import HowSection from './components/HowSection';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     
@@ -37,8 +38,24 @@ const Home = () => {
 
      <Container>
       <Row>
-        <Col lg={6}><img src="images/img-11.jpg" alt="img" /></Col>
-        <Col lg={6}><img src="images/img-11.jpg" alt="img" /></Col>
+        <Col lg={6} className="image-container">
+          <img src="images/img-11.jpg" alt="img" className="two-image" />
+          <div className="text-container">
+            <h4>Heading Goes Here</h4>
+            <p>some kind of subheading</p>
+            <Link to="/" className='btn btn-success rounded-pill'>Read More</Link>
+          </div>
+        </Col>
+
+        <Col lg={6} className="image-container">
+          <img src="images/img-11.jpg" alt="img" className="two-image" />
+          <div className="text-container">
+            <h4>Heading Goes Here</h4>
+            <p>some kind of subheading</p>
+            <Link to="/" className='btn btn-success rounded-pill'>Read More</Link>
+          </div>
+        </Col>
+      
       </Row>
      </Container> 
 
