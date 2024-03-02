@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './components/Carousel';
-import { Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Cards from './components/Cards';
 import Testimonial from './components/Testimonial';
 import Banner from './components/Banner';
@@ -13,7 +13,36 @@ const Home = () => {
 
      <Hero/>
 
-      <section className='container'>
+     <Container className="mt-4">
+      <Row className="brands-section">
+        <Col lg={2}><img src={"images/brands/jaguar.png"} alt="brand" /></Col>
+        <Col lg={2}><img src={"images/brands/kia.png"} alt="brand" /></Col>
+        <Col lg={2}><img src={"images/brands/dodge.png"} alt="brand" /></Col>
+        <Col lg={2}><img src={"images/brands/toyota.png"} alt="brand" /></Col>
+        <Col lg={2}><img src={"images/brands/hyundai.png"} alt="brand" /></Col>
+        <Col lg={2}><img src={"images/brands/subaru.png"} alt="brand" /></Col>
+      </Row>
+     </Container>
+
+     <div className='mt-4'>
+        <Row className="text-center justify-content-center" data-aos="fade-right">
+            <Col className="col-md-11 col-lg-9 col-xl-7 mb-2">
+                <div className="section-title">
+                    <h2 className="sec-title">The Heading Goes Here</h2>
+                </div>
+            </Col>
+        </Row>
+        <div className='w-75 mx-auto' data-aos="fade-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis, sit amet fringilla odio lectus nec nunc. Ut auctor velit sit amet tortor efficitur, vel tincidunt purus pellentesque. Nunc quis odio sit amet velit ullamcorper rhoncus. Vivamus nec purus in elit hendrerit tincidunt. Proin a urna vel sapien vestibulum feugiat. Curabitur nec justo et justo tincidunt tincidunt. Integer in ultricies erat. Vestibulum ac eros eu turpis convallis bibendum ut non quam.</p></div>
+     </div>
+
+     <Container>
+      <Row>
+        <Col lg={6}><img src="images/img-11.jpg" alt="img" /></Col>
+        <Col lg={6}><img src="images/img-11.jpg" alt="img" /></Col>
+      </Row>
+     </Container> 
+
+      <Container>
         <Row style={{ marginTop: '4rem' }}>
           <Col lg={6} data-aos="fade-right">
             <h2>Heading</h2>
@@ -24,7 +53,7 @@ const Home = () => {
             <img src={"images/img-10.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
-      </section>
+      </Container>
 
      <div className='mt-4'>
         <div className="row text-center justify-content-center" data-aos="zoom-in-up">

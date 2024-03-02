@@ -1,6 +1,11 @@
 html, body{
     overflow-x: hidden;
 }
+
+body{
+    background-color: #f6f6f6;
+}
+
 .back-to-top {
     position: fixed;
     right: 30px;
@@ -682,4 +687,18 @@ html, body{
     .order-small-1{
         order: -1;
     }
+  }
+
+  /* Footer */
+  .footer-link{
+    text-decoration: none;
+    color: white;
+  }
+  .footer-link:hover{
+    color: var(--bs-success);
+  }
+
+  /* brands */
+  .brands-section img{
+    width: 90%;
   }

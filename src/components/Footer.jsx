@@ -1,65 +1,73 @@
 import React from 'react'
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <>
       <footer className='container-fluid py-y dark-color mt-4'>
-        <section className=' container mt-4 bg-dark'>
+        <div className=' container mt-4 bg-dark'>
             {/* columns */}
-            <section className='row'>
-                <div className="col-6 col-md-2 mb-3">
-                    <h4 className='fw-bolder text-light'>Section</h4>
-                    <ul className='list-unstyled text-light'>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                    </ul>
+            <section className='row text-white'>
+               {/* 1 */}
+               <div className="col-lg-3 col-md-2 my-2">
+                <Link to="/" className="navbar-brand p-0">
+                    <h2 className="m-0">Tyre Site</h2>
+                </Link>
+                {/* Icons */}
+                <div className='d-flex align-items-center gap-3'>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p className='mt-3'>some pseudo company address <br /> will go here</p>
+                </div>
+                
+                <div className='d-flex align-items-center gap-3'>
+                    <i class="fa-solid fa-phone"></i>
+                    <p className='mt-3'>+44 0123456789 <br /> Mon-Fri 8:00 to 19:00</p>
+                </div>
+                
+                <div className='d-flex align-items-center gap-3'>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p className='mt-3'>something@email.com</p>
                 </div>
 
-                <div className="col-6 col-md-2 mb-3">
-                    <h4 className='fw-bolder text-light'>Section</h4>
-                    <ul className='list-unstyled text-light'>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                    </ul>
+               </div>
+               {/* 2 */}
+               <div className="col-lg-3 col-md-2 my-2">
+                <h4>Useful links</h4>
+                <ul className='d-flex flex-column'>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                </ul>
+               </div>
+               {/* 3 */}
+               <div className="col-lg-3 col-md-2 my-2">
+                <h4>Useful links</h4>
+                <ul className='d-flex flex-column'>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                    <Link to="/" className='footer-link'>Link</Link>
+                </ul>
+               </div>
+               {/* 4 */}
+               <div className="col-lg-3 col-md-2 my-2">
+                <h5>Subscribe the Newsletter for discount</h5>
+                <form action="#" method="post">
+                <div className="form-group">
+                    <label>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
+                    <input type="text" className="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subscribe"/>
+                    <button className='btn btn-success rounded-pill'>Subscribe</button>
                 </div>
-
-                <div className="col-6 col-md-2 mb-3">
-                    <h4 className='fw-bolder text-light'>Section</h4>
-                    <ul className='list-unstyled text-light'>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                        <li><a href="#" className="text-light">Link</a></li>
-                    </ul>
-                </div>
-
-                <div className="col-md-5 mb-3">
-                    <form>
-                        <h5 className="text-light">Subscribe to our newsletter</h5>
-                        <p className="text-light">Monthly digest of what's new and exciting from us.</p>
-                        <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label htmlFor="newsletter1" className="visually-hidden text-light">Email address</label>
-                            <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-                            <button className="btn btn-success" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p className="text-light">© 2024 Company, Inc. All rights reserved.</p>
-                    <ul className="list-unstyled d-flex">
-                        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#twitter"></use></svg></a></li>
-                        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#instagram"></use></svg></a></li>
-                        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#facebook"></use></svg></a></li>
-                    </ul>
-                </div>
+                </form>
+               </div>
+               {/* END */}
             </section>
-        </section>
+        </div>
       </footer>
     </>
   )
