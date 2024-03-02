@@ -14,7 +14,7 @@ const Navbar = () => {
     
     <Topheader/>
 
-       <div className="container-fluid position-relative p-0">
+       <div className="container-fluid main-nav-bar p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-dark px-4 px-lg-5 py-2 py-lg-0">
           <Link to="/" className="navbar-brand p-0">
             <h1 className="m-0">Tyre Site</h1>
