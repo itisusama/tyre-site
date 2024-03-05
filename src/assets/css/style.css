@@ -727,3 +727,27 @@ body{
     color: white;
     text-align: center;
   }
+  /* About */
+  .about-circle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: var(--bs-success);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .about-box{
+    width: 90%;
+    padding: 20px;
+    margin-left: 50px !important;
+  }
+
+  .about-box p{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+  }

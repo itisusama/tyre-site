@@ -13,15 +13,73 @@ function About() {
       </header>
       {/* Main Content */}
       <div className='mt-4'>
-        <div className="row text-center justify-content-center" data-aos="fade-right">
+        <Row className="text-center justify-content-center" data-aos="fade-right">
             <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                 <div className="section-title">
                     <h2 className="sec-title">The Heading Goes Here</h2>
                 </div>
             </div>
-        </div>
-        <div className='w-75 mx-auto' data-aos="fade-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis, sit amet fringilla odio lectus nec nunc. Ut auctor velit sit amet tortor efficitur, vel tincidunt purus pellentesque. Nunc quis odio sit amet velit ullamcorper rhoncus. Vivamus nec purus in elit hendrerit tincidunt. Proin a urna vel sapien vestibulum feugiat. Curabitur nec justo et justo tincidunt tincidunt. Integer in ultricies erat. Vestibulum ac eros eu turpis convallis bibendum ut non quam.</p></div>
-     </div> 
+        </Row>
+        <div className='w-75 mx-auto' data-aos="fade-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis.</p></div>
+     </div>
+
+     {/* New Section */}
+     <Container>
+      <Row>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+        <Col lg={6} className='d-flex align-items-center mt-2'>
+          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className="about-box border shadow-sm">
+            <h3 className='text-center'>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
+          </div>
+        </Col>
+      </Row>
+
+      
+     </Container>
+     {/* New Section */}
+
       <Container className="py-5">
         <Row style={{ marginTop: '4rem' }}>
           <Col lg={6} data-aos="fade-right">
