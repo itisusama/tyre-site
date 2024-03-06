@@ -6,6 +6,7 @@ import Testimonial from './components/Testimonial';
 import Banner from './components/Banner';
 import HowSection from './components/HowSection';
 import { Link } from 'react-router-dom';
+import Newsletter from './components/Newsletter';
 
 const Home = () => {
     
@@ -105,7 +106,7 @@ const Home = () => {
      <Testimonial/>
      
       <HowSection/>
-
+      <Newsletter/>
     </>
     
   )

@@ -371,7 +371,7 @@ body{
 .tc-text-color{
     color: var(--bs-success);
 }
-.pc-home-banner {
+.pc-home-banner, .newsletter {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/img-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -757,3 +757,28 @@ body{
     text-align: justify;
     margin: 0 auto;
   }
+  /* Newsletter */
+  .newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    .newsletter .content h2 {
+    color: var(--bs-success);
+    margin-bottom: 40px; }
+    .newsletter .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius:0;
+    }
+    .newsletter .content.form-control:focus {
+    box-shadow: none;
+    }
+    .newsletter .content .btn {
+    min-height: 50px; 
+    border-radius:0;
+    background: var(--bs-success);
+    color: #fff;
+    font-weight:600;
+    }
