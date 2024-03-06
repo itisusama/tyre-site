@@ -9,7 +9,7 @@ const Footer = () => {
             {/* columns */}
             <section className='row text-white'>
                {/* 1 */}
-               <div className="col-lg-3 col-md-2 my-2">
+               <div className="col-md-3 my-2">
                 <Link to="/" className="navbar-brand p-0">
                     <h2 className="m-0">Tyre Site</h2>
                 </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
 
                </div>
                {/* 2 */}
-               <div className="col-lg-3 col-md-2 my-2">
+               <div className="col-md-3 my-2">
                 <h4>Useful links</h4>
                 <ul className='d-flex flex-column'>
                     <Link to="/" className='footer-link'>Link</Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </ul>
                </div>
                {/* 3 */}
-               <div className="col-lg-3 col-md-2 my-2">
+               <div className="col-md-3 my-2">
                 <h4>Useful links</h4>
                 <ul className='d-flex flex-column'>
                     <Link to="/" className='footer-link'>Link</Link>
@@ -55,13 +55,13 @@ const Footer = () => {
                 </ul>
                </div>
                {/* 4 */}
-               <div className="col-lg-3 col-md-2 my-2">
+               <div className="col-md-3 my-2">
                 <h5>Subscribe the Newsletter for discount</h5>
                 <form action="#" method="post">
                 <div className="form-group">
                     <label>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
                     <input type="text" className="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subscribe"/>
-                    <button className='btn btn-success rounded-pill'>Subscribe</button>
+                    <button className='btn btn-success'>Subscribe</button>
                 </div>
                 </form>
                </div>

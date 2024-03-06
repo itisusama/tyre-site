@@ -43,7 +43,7 @@ const Home = () => {
           <div className="text-container">
             <h4>Heading Goes Here</h4>
             <p>some kind of subheading</p>
-            <Link to="/" className='btn btn-success rounded-pill'>Read More</Link>
+            <Link to="/" className='btn btn-success'>Read More</Link>
           </div>
         </Col>
 
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="text-container">
             <h4>Heading Goes Here</h4>
             <p>some kind of subheading</p>
-            <Link to="/" className='btn btn-success rounded-pill'>Read More</Link>
+            <Link to="/" className='btn btn-success'>Read More</Link>
           </div>
         </Col>
       

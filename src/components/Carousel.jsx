@@ -8,7 +8,7 @@ const Carousel = () => {
       <div className="d-sm-flex align-items-center justify-content-between w-100" style={{ height: '82vh' }}>
         <div className="col-md-4 mx-auto mb-4 mb-sm-0 headline container">
           <span className="text-secondary text-uppercase" data-aos="fade-right">Subheadline</span>
-          <h1 className="display-4 my-4 font-weight-bold" data-aos="fade-right">Enter Your <span className='bg-success'>Headline Here</span></h1>
+          <h1 className="display-4 my-4 font-weight-bold" data-aos="fade-right">Enter Your <span className='text-success'>Headline Here</span></h1>
           <Link to="/contact" className="btn btn-success px-5 py-3 text-white mt-3 mt-sm-0" data-aos="fade-right">Contact Us</Link>
         </div>
         {/* in mobile remove the clippath */}

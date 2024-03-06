@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Cards from './components/Cards';
 
 function About() {
 
@@ -93,6 +94,18 @@ function About() {
             <img src={"images/img-11.jpg"} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
+
+        <div className='mt-4'>
+        <Row className="text-center justify-content-center" data-aos="fade-right">
+            <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
+                <div className="section-title">
+                    <h2 className="sec-title">The Heading Goes Here</h2>
+                </div>
+            </div>
+        </Row>
+        <div className='w-75 mx-auto' data-aos="fade-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis.</p></div>
+        </div>
+        <Cards/>
 
         <Row style={{ marginTop: '4rem' }}>
           <Col lg={6} data-aos="fade-left" className='order-2'>
