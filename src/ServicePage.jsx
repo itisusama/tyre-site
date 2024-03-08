@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import HowSection from './components/HowSection';
+import Newsletter from './components/Newsletter';
 
 const ServicePage = ({pageTitle, ...otherProps}) => {
     const { 
@@ -132,6 +133,7 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     </div>
     {/* How it works */}
     <HowSection/>
+    <Newsletter/>
     </>
   )
 }

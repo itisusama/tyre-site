@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Cards from './components/Cards';
+import Newsletter from './components/Newsletter';
 
 function About() {
 
@@ -30,14 +31,14 @@ function About() {
         <Col lg={6} className='d-flex align-items-center mt-2'>
           <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
+            <h3 className='text-center'>Good Quality</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
         <Col lg={6} className='d-flex align-items-center mt-2'>
-          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className='about-circle'><i class="fa-regular fa-clock fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
+            <h3 className='text-center'>24/7 Support</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
@@ -45,38 +46,20 @@ function About() {
 
       <Row>
         <Col lg={6} className='d-flex align-items-center mt-2'>
-          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className='about-circle'><i class="fa-solid fa-comment fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
+            <h3 className='text-center'>Availability</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
         <Col lg={6} className='d-flex align-items-center mt-2'>
-          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div className='about-circle'><i class="fa-solid fa-truck-fast fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
+            <h3 className='text-center'>Fast</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
       </Row>
-
-      <Row>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
-          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
-          <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
-          </div>
-        </Col>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
-          <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
-          <div className="about-box border shadow-sm">
-            <h3 className='text-center'>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
-          </div>
-        </Col>
-      </Row>
-
       
      </Container>
      {/* New Section */}
@@ -105,6 +88,7 @@ function About() {
         </Row>
         <div className='w-75 mx-auto' data-aos="fade-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis.</p></div>
         </div>
+        
         <Cards/>
 
         <Row style={{ marginTop: '4rem' }}>
@@ -136,8 +120,8 @@ function About() {
             <p>At Mobile Fit Tyres, we prioritize integrity, reliability, and safety in everything we do. We strive to build lasting relationships with our customers based on trust and transparency.</p>
           </Col>
         </Row>
-
       </Container>
+      <Newsletter/>
     </div>
   );
 }

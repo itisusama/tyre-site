@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 
 const Cards = () => {
-
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -35,75 +34,56 @@ const Cards = () => {
     };
   }, [scrollPosition]);
 
+  // Example data for cards
+  const cardData = [
+    { title: "Card title 1", text: "Some quick example text 1", image: "images/img-11.jpg" },
+    { title: "Card title 2", text: "Some quick example text 2", image: "images/img-11.jpg" },
+    { title: "Card title 3", text: "Some quick example text 3", image: "images/img-11.jpg" },
+    { title: "Card title 4", text: "Some quick example text 4", image: "images/img-11.jpg" },
+  ];
 
   return (
     <>
-    <div id="carouselExampleControls" className="carousel">
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <div className="card" data-aos="zoom-in">
-            <div className="img-wrapper">
-              <img src={"images/img-11.jpg"} alt="..." />
+      <div id="carouselExampleControls" className="carousel">
+        <div className="carousel-inner">
+          {cardData.map((card, index) => (
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <div className="card" data-aos="zoom-in">
+                <div className="img-wrapper">
+                  <img src={card.image} alt="card" />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">{card.title}</h5>
+                  <p className="card-text">{card.text}</p>
+                  <a href="#" className="btn btn-success">
+                    Learn More
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="card-body">
-              <h5 className="card-title">Card title 1</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-success">Learn More</a>
-            </div>
-          </div>
+          ))}
         </div>
-        {/* 2 */}
-        <div className="carousel-item">
-          <div className="card" data-aos="zoom-in">
-            <div className="img-wrapper">
-              <img src={"images/img-11.jpg"} alt="..." />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Card title 1</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-success">Learn More</a>
-            </div>
-          </div>
-        </div>
-        {/* 3 */}
-        <div className="carousel-item">
-          <div className="card" data-aos="zoom-in">
-            <div className="img-wrapper">
-              <img src={"images/img-11.jpg"} alt="..." />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Card title 1</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-success">Learn More</a>
-            </div>
-          </div>
-        </div>
-        {/* 4 */}
-        <div className="carousel-item">
-          <div className="card" data-aos="zoom-in">
-            <div className="img-wrapper">
-              <img src={"images/img-11.jpg"} alt="..." />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Card title 1</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-success">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>    
     </>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
