@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/css/style.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,10 +19,11 @@ import JumpStart from './JumpStart';
 import LocknutWheel from './LocknutWheel';
 import MobileBreakdown from './MobileBreakdown';
 import aos from 'aos';
+// import 'aos/dist/aos.css';
 
 const App = () => {
 
-  React.useEffect(() => {
+  useEffect(() => {
     aos.init({ duration: 1000 });
   }, []);
 

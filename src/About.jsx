@@ -28,14 +28,14 @@ function About() {
      {/* New Section */}
      <Container>
       <Row>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
+        <Col lg={6} className='d-flex align-items-center mt-2' data-aos="fade-right">
           <div className='about-circle'><i class="fa-solid fa-check fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
             <h3 className='text-center'>Good Quality</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
+        <Col lg={6} className='d-flex align-items-center mt-2' data-aos="fade-left">
           <div className='about-circle'><i class="fa-regular fa-clock fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
             <h3 className='text-center'>24/7 Support</h3>
@@ -45,14 +45,14 @@ function About() {
       </Row>
 
       <Row>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
+        <Col lg={6} className='d-flex align-items-center mt-2' data-aos="fade-right">
           <div className='about-circle'><i class="fa-solid fa-comment fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
             <h3 className='text-center'>Availability</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, autem veritatis, corporis natus facere sint sapiente minima, suscipit culpa ut quidem saepe.</p>
           </div>
         </Col>
-        <Col lg={6} className='d-flex align-items-center mt-2'>
+        <Col lg={6} className='d-flex align-items-center mt-2' data-aos="fade-left">
           <div className='about-circle'><i class="fa-solid fa-truck-fast fa-2xl"></i></div>
           <div className="about-box border shadow-sm">
             <h3 className='text-center'>Fast</h3>

@@ -52,6 +52,13 @@ const Cards = () => {
                 <div className="img-wrapper">
                   <img src={card.image} alt="card" />
                 </div>
+                {/* Boxes */}
+                <div className='card-boxes'>
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                </div>
+                {/* Boxes */}
                 <div className="card-body">
                   <h5 className="card-title">{card.title}</h5>
                   <p className="card-text">{card.text}</p>

@@ -17,12 +17,12 @@ const Home = () => {
 
      <Container className="mt-4">
       <Row className="brands-section">
-        <Col lg={2}><img src={"images/brands/jaguar.png"} alt="brand" /></Col>
-        <Col lg={2}><img src={"images/brands/kia.png"} alt="brand" /></Col>
-        <Col lg={2}><img src={"images/brands/dodge.png"} alt="brand" /></Col>
-        <Col lg={2}><img src={"images/brands/toyota.png"} alt="brand" /></Col>
-        <Col lg={2}><img src={"images/brands/hyundai.png"} alt="brand" /></Col>
-        <Col lg={2}><img src={"images/brands/subaru.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/jaguar.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/kia.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/dodge.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/toyota.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/hyundai.png"} alt="brand" /></Col>
+        <Col md={2}><img src={"images/brands/subaru.png"} alt="brand" /></Col>
       </Row>
      </Container>
 
@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         </Col>
 
-        <Col lg={6} className="image-container">
+        <Col lg={6} className="image-container mt-3">
           <img src="images/img-11.jpg" alt="img" className="two-image" />
           <div className="text-container">
             <h4>Heading Goes Here</h4>
